@@ -1,12 +1,46 @@
-# React + Vite
+# 🤖 Smart AI Bot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **Smart AI Bot** built using **React** for the frontend and **Machine Learning** for intelligent natural language understanding. It allows users to interact in real-time and get smart responses or insights from their queries or uploaded documents.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼️ Demo Preview
 
-## Expanding the ESLint configuration
+<p align="center">
+  <img src="screenshots/smart-bot-ui.png" alt="Smart AI Bot UI" width="700"/>
+</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Live Demo
+
+[👉 Click here to try the app](#) *(Add your deployed link)*
+
+---
+
+## 🧠 Features
+
+- Real-time AI interaction
+- Resume/document analysis
+- ML-powered section-wise breakdown
+- Beautiful and responsive React + Bootstrap UI
+- RESTful API integration with backend
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- ⚛️ React JS
+- 💅 Bootstrap 5
+- 🔁 React Router DOM
+
+### Backend
+- 🐍 Flask (Python)
+- 🤖 Machine Learning + NLP (spaCy, transformers)
+- 📄 Resume parsing: `pdfplumber`, `python-docx`
+
+---
+
+## 🧩 Folder Structure
+
