@@ -4,19 +4,12 @@ A **Smart AI Bot** built using **React** for the frontend and **Machine Learning
 
 ---
 
-## 🖼️ Demo Preview
+## 🖼️ Frontend Model
 
-<p align="center">
-  <img src="screenshots/smart-bot-ui.png" alt="Smart AI Bot UI" width="700"/>
-</p>
+![Alt text](https://github.com/piyushgupta246/ML/blob/main/Screenshot%202025-07-06%20191807.png)
 
 ---
 
-## 🚀 Live Demo
-
-[👉 Click here to try the app](#) *(Add your deployed link)*
-
----
 
 ## 🧠 Features
 
@@ -42,5 +35,4 @@ A **Smart AI Bot** built using **React** for the frontend and **Machine Learning
 
 ---
 
-## 🧩 Folder Structure
 
