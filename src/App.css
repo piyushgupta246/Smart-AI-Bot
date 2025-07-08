@@ -1,0 +1,249 @@
+/* === GLOBAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a23;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+/* === NAVIGATION === */
+nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 25px;
+  background-color: black;
+}
+
+.logo{
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+      background-size: 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: move 10s linear infinite;
+      font-weight: bold;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* === HOME PAGE === */
+.home {
+  width: 100%;
+  overflow: hidden;
+  background-color: #0a0a23;
+}
+
+.hero {
+  width: 100%;
+  height: calc(80vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+#tag {
+  font-size: 30px;
+  padding: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.cate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.upImg,
+.genImg,
+.chat {
+  padding: 10px 20px;
+  border: 3px solid rgb(111, 105, 105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 30px;
+  font-size: 19px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.upImg svg {
+  width: 20px;
+  height: 20px;
+  color: green;
+}
+
+.genImg svg {
+  width: 20px;
+  height: 20px;
+  color: red;
+}
+
+.chat svg {
+  width: 20px;
+  height: 20px;
+  color: yellow;
+}
+
+.upImg:hover,
+.genImg:hover,
+.chat:hover {
+  box-shadow: 0px 0px 15px gray;
+}
+
+/* === INPUT BOX (Home + Chat) === */
+.input-box {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+#add,
+#submit {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid rgb(87, 81, 81);
+  border-radius: 50%;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+}
+
+#add svg,
+#submit svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(218, 224, 218);
+}
+
+#add:hover,
+#submit:hover,
+form input:hover {
+  box-shadow: 0px 0px 15px gray;
+}
+
+form input {
+  max-width: 60%;
+  width: calc(100% - 10px);
+  height: 60px;
+  background-color: #000;
+  border: 3px solid gray;
+  outline: none;
+  border-radius: 30px;
+  color: white;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+/* === CHAT PAGE === */
+.chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #0a0a23;
+}
+
+.chat-page {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Chat messages */
+.user,
+.ai {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 10px 15%;
+}
+
+.user span,
+.ai span {
+  width: 100%;
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #121212;
+  border: 2px solid #555;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  word-wrap: break-word;
+}
+
+.user img,
+.ai img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ccc;
+  padding: 2px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 500px) {
+  #tag {
+    font-size: 20px;
+  }
+
+  .input-box {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  .user,
+  .ai {
+    margin: 10px 5%;
+  }
+
+  .user span,
+  .ai span {
+    font-size: 1rem;
+  }
+}
