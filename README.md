@@ -31,7 +31,6 @@ A **Smart AI Bot** built using **React** for the frontend and **Machine Learning
 ### Backend
 - 🐍 Flask (Python)
 - 🤖 Machine Learning + NLP (spaCy, transformers)
-- 📄 Resume parsing: `pdfplumber`, `python-docx`
 
 ---
 
